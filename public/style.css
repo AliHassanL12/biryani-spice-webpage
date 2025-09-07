@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
+    font-family: "Poppins", "Playfair Display", serif;
+    font-family: inherit;
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,6 +10,8 @@
 }
 
 .stickyHeader {
+    position: sticky;
+    top: 0px;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -14,14 +20,15 @@
 }
 
 .orderButton {
+    font-family: sans-serif;
     color: white;
     font-weight: bold;
     background-color: #f2c512;
     margin-right: 1.5em;
     font-size: 1rem;
-    padding: 0.6em 1.2em;
-    border-radius: 12px;
-    box-shadow: 2px 2px 5px red;
+    padding: 0.7em 1.3em;
+    border-radius: 6px;
+    box-shadow: 3px 2px 5px rgba(255, 0, 0, 0.5);
     transition: all 0.1s ease-in-out;
 }
 
@@ -32,6 +39,27 @@
 
 .orderButton:active {
     transform: scale(0.96);
-    box-shadow: 2px 2px 8px red;
+    box-shadow: 3px 2px 8px red;
     transition: all 0.1s ease;
+}
+
+h1 {
+   font-family: "Playfair Display";
+   margin-top: 0.75em;
+}
+
+.heroContent p {
+    font-weight: 400;
+    color: rgb(0 0 0 / 74%);
+    margin-left: 0.7em;
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+    line-height: 1.5;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
