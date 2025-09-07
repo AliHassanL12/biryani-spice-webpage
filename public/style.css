@@ -21,4 +21,17 @@
     font-size: 1rem;
     padding: 0.6em 1.2em;
     border-radius: 12px;
+    box-shadow: 2px 2px 5px red;
+    transition: all 0.1s ease-in-out;
+}
+
+.orderButton:hover {
+    box-shadow: 5px 2.5px 8px red;
+    cursor: pointer;
+}
+
+.orderButton:active {
+    transform: scale(0.96);
+    box-shadow: 2px 2px 8px red;
+    transition: all 0.1s ease;
 }
