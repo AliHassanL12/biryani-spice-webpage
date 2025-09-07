@@ -28,12 +28,12 @@
     font-size: 1rem;
     padding: 0.7em 1.3em;
     border-radius: 6px;
-    box-shadow: 3px 2px 5px rgba(255, 0, 0, 0.5);
+    box-shadow: 3px 2px 5px rgba(255, 0, 0, 0.3);
     transition: all 0.1s ease-in-out;
 }
 
 .orderButton:hover {
-    box-shadow: 5px 2.5px 8px red;
+    box-shadow: 5px 2.5px 8px rgb(255, 0, 0);
     cursor: pointer;
 }
 
@@ -46,12 +46,14 @@
 h1 {
    font-family: "Playfair Display";
    margin-top: 0.75em;
+   color: white;
 }
 
 .heroContent p {
     font-weight: 400;
-    color: rgb(0 0 0 / 74%);
+    color: rgba(255, 255, 255, 0.74);
     margin-left: 0.7em;
+    margin-right: 0.7em;
     margin-top: 0.6em;
     margin-bottom: 1.2em;
     line-height: 1.5;
@@ -62,4 +64,26 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem 1rem;
+    gap: 0.7rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    position: relative;
+    background-image: url(images/biryani_hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.28));
 }
