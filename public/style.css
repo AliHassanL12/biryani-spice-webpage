@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 
+p {
+    font-family: "Poppins";
+}
 .stickyHeader {
     position: sticky;
     z-index: 3;
@@ -90,7 +93,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.28));
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.51));
 }
 
 .bestSellers h1, h2, h3, h4, h5, h6 {
@@ -124,8 +127,6 @@ section h2 {
 .cardBody {
     hyphens: auto;
     overflow-wrap: break-word;
-    margin: 1em;
-    line-height: 1.4;
 }
 
 .bestSellers {
@@ -137,4 +138,69 @@ section h2 {
 
 .bestSellers button {
     margin: 0.5em;
+}
+
+.reviews {
+    font-family: "Poppins";
+}
+
+.star,
+.summaryStar {
+    border: none;
+    background: none;
+    color: #ff9800;
+}
+
+.star {
+    font-size: 1.6em;
+}
+
+.summaryStar {
+    font-size: 1.1em;
+}
+
+.reviewBody,
+.cardBody {
+    margin: 1rem;
+    line-height: 1.4;
+}
+
+
+.reviewContent {
+    line-height: 1.4;   
+    margin: 0.4em 0em;
+    color: #000000c9;
+}
+
+.reviewUsername {
+    text-align: end;
+    font-size: 0.85em;
+    color: #000000a8;
+}
+
+.reviews h2 {
+    padding-top: 1rem;
+    border-top: 1px solid #00000012;
+    width: 100%;
+}
+
+.reviewSummary {
+    font-size: 0.95em;
+    color: #666666b6;
+    margin: 1rem;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summaryContainer {
+    width: 100%;
+}
+
+.reviews .orderButton {
+    margin: 1rem 0;
 }
