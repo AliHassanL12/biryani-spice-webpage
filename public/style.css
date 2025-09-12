@@ -178,12 +178,18 @@ section h2 {
     color: #000000a8;
 }
 
-.reviews h2 {
+.reviews h2,
+.location h2,
+.catering h2 {
     padding-top: 1rem;
     border-top: 1px solid #00000012;
     width: 100%;
 }
 
+.catering h2 {
+    padding-top: 2rem;
+    margin-top: 0;
+}
 .reviewSummary {
     font-size: 0.95em;
     color: #666666b6;
@@ -203,4 +209,47 @@ section h2 {
 
 .reviews .orderButton {
     margin: 1rem 0;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    width: 100%;
+}
+
+.information p {
+    margin: 0.5rem;
+    margin-left: 1rem;
+}
+
+.location iframe {
+    width: 100%;
+    border: 0;
+    height: 225px;
+    border-radius: 8px;
+}
+
+.phoneLink {
+    text-decoration: none;
+    color: #1166cc;
+}
+
+.catering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.catering p {
+    line-height: 1.5;
+    margin: 0 1rem;
 }
