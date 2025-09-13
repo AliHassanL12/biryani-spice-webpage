@@ -15,7 +15,7 @@ p {
     position: sticky;
     z-index: 3;
     top: 0px;
-    background-color: black;
+    background-color: #000000f8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,7 +187,7 @@ section h2 {
 }
 
 .catering h2 {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     margin-top: 0;
 }
 .reviewSummary {
@@ -252,4 +252,18 @@ section h2 {
 .catering p {
     line-height: 1.5;
     margin: 0 1rem;
+}
+
+footer {
+    background-color: #000000f8;
+    color: white;
+}
+
+.restaurantName {
+    display: flex;
+}
+
+.biryaniSpiceLogo {
+    width: 100px;
+    height: 100px;
 }
