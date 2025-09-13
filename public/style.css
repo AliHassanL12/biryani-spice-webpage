@@ -254,16 +254,44 @@ section h2 {
     margin: 0 1rem;
 }
 
-footer {
+.catering button {
+    margin-bottom: 3rem;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000000f8;
     color: white;
-}
-
-.restaurantName {
-    display: flex;
+    padding: 1.5rem;
+    gap: 1rem;
+    text-align: right;
 }
 
 .biryaniSpiceLogo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+}
+
+.email {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.footer .phoneLink {
+    color: white;
+}
+
+.fas.fa-phone-alt{
+    margin-left: 0.5rem;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerInfo p {
+    font-size: 0.9rem;
 }
