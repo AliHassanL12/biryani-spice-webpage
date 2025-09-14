@@ -80,12 +80,21 @@ p {
 
 .hero {
     position: relative;
-    background-image: url(images/biryani_hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
+.hero-media, 
+.hero-media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-media img {
+    object-fit: cover;
+    object-position: center;
+    image-rendering: auto;
+}
 .hero:before {
     content: '';
     position: absolute;
@@ -94,6 +103,7 @@ p {
     left: 0;
     bottom: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.51));
+    z-index: 1;
 }
 
 .bestSellers h1, h2, h3, h4, h5, h6 {
@@ -289,10 +299,34 @@ section h2 {
     flex-basis: 260px;
 }
 
-.footerInfo p {
+.footerInfo p,
+.footerInfo address {
     font-size: 0.9rem;
 }
 
 .restaurantLogoDiv {
     flex-grow: 1;
+}
+
+.footerInfo address {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .reviewCard,
+    .bestSellers .card {
+        width: 100%;
+    }
+
+    html {
+        font-size: 21px;
+    }
+
+    .restaurantLogoDiv {
+        flex-grow: 0;
+    }
+    .biryaniSpiceLogo {
+        width: 120px;
+        height: 120px;
+    }
 }
