@@ -401,3 +401,11 @@ section h2 {
     background-color: white;
     overflow: hidden;
 }
+
+.menuCard {
+    margin: 25px 0;
+}
+
+.portionSize {
+    color: rgb(0 0 0 / 53%);
+}
