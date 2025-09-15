@@ -1,9 +1,6 @@
 <%- include('partials/head.ejs') %>
 <body>
-    <div class="stickyHeader">
-        <img src="images/logo.png" alt="Biryani Spice Logo" width="100px" height="100px">
-        <button class="orderButton">Call Us Now</button>
-    </div>
+    <%- include('partials/sticky-header.ejs') %>
     <section class="hero">
         <picture class="hero-media">
             <source srcset="images/biryani_hero_800.avif 800w, images/biryani_hero_1200.avif 1200w, images/biryani_hero_1600.avif 1600w" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 100vw, 1200" type="image/avif">
@@ -118,7 +115,7 @@
                 </div>
             </article>
         </div>
-        <button class="orderButton">Call to Place an Order</button>
+        <a class="orderButton" href="tel:+442080913342">Call to Place an Order</a>
     </section>
     <section class="location">
         <h2>Location & Hours</h2>

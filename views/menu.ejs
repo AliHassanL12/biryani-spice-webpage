@@ -1,5 +1,21 @@
 <%- include('partials/head.ejs') %>
 <body>
-    
+    <%- include('partials/sticky-header.ejs') %>
+    <section class="category">
+        <button class="accordion">Tandoor Items</button>
+        <div class="panel">
+            <article class="card">
+                <div class="cardBody">
+                    <div class="cardHead">
+                        <h3>Chicken Biryani</h3>
+                        <p class="price">£8.99</p>
+                    </div>
+                    <p class="desc">Fragrant basmati rice and tender chicken meat, slow cooked on low heat to seal in rich, aromatic flavours.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="js/javascript.js" defer></script>
 </body>
 <%- include('partials/footer.ejs') %>
