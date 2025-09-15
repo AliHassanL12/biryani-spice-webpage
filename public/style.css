@@ -312,6 +312,11 @@ section h2 {
     font-family: 'Poppins', sans-serif;
 }
 
+a.orderButton {
+    color: white;
+    text-decoration: none;
+}
+
 @media (min-width: 768px) {
     .reviewCard,
     .bestSellers .card {
@@ -361,5 +366,9 @@ section h2 {
     .biryaniSpiceLogo {
         height: 150px;
         width: 150px;
+    }
+    .heroContent p {
+        width: 800px;
+        text-align: center;
     }
 }
